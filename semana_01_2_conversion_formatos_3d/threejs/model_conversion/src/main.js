@@ -54,7 +54,7 @@ document.getElementById("btnStart").onclick = abrir;
 function abrir() {
     //Cargar el modelo 1
     loader.load("11717_bicycle_v2_L1.obj", (obj) => {
-    obj.position.set(1, 1, 1); //Posición del modelo
+    obj.position.set(10, 10, 10); //Posición del modelo
     obj.scale.setScalar(0.03); //Escalamiento del modelo
     scene.add(obj); //Añadir el modelo a la escena
 });
@@ -65,6 +65,20 @@ function abrir() {
     scene.add(obj);
 });
 }
+
+//Funcion para fijar el modelo 1
+document.getElementById("btnModel1").onclick = () => {
+    camera.position.set(1, 1, 1);
+    controls.target.set(0, 0, 0);
+    controls.update(); 
+};
+
+//Funcion para fijar el modelo 2 
+document.getElementById("btnModel2").onclick = () => {
+    camera.position.set(11, 11, 11);
+    controls.target.set(10, 10, 10);
+    controls.update(); 
+};
 
 // Función Loop que genera la visualización
 function animate() {
