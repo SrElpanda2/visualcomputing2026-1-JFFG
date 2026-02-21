@@ -1,6 +1,6 @@
 # Taller Construyendo mundo 3D
 ## Nombre: Juan Felipe Fajardo Garzón
-## Fecha de entrega:
+## Fecha de entrega: 20/02/2026
 
 ## Descripción breve: 
 Para este taller se buscaba cargar modelos 3D en diferentes entornos, una vez cargados se visualizaba de mejor manera los vértices, aristas y caras del modelo
